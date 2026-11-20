@@ -61,6 +61,8 @@ sudo -u camwatch ffmpeg -hide_banner -f v4l2 -input_format mjpeg \
 MJPG is required for 720p30: raw video at that size needs more bandwidth than
 USB 2.0 provides, so the camera drops to 10 fps.
 
+In the field, IP cameras speak RTSP on their own and publish straight to the
+server. The C920 is a USB webcam, so ffmpeg stands in for an IP camera here.
 ## Health check
 
 ```bash
